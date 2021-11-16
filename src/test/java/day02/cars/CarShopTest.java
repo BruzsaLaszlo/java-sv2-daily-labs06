@@ -21,10 +21,8 @@ class CarShopTest {
     @Test
     void addCar() {
 
-        Car car1 = new Car("Toyota", 1.2, Color.BLACK, 2_300_000);
         assertTrue(carShop.addCar(car1));
 
-        Car car2 = new Car("Lamborghini", 5.2, Color.BLACK, 10_300_000);
         assertFalse(carShop.addCar(car2));
 
     }
