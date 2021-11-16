@@ -8,9 +8,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class CarShopTest {
 
-    final static int MAX_PRICE = 10_000_000;
-
-    CarShop carShop = new CarShop("Best Car", MAX_PRICE);
+    CarShop carShop = new CarShop("Best Car", 10_000_000);
 
     Car car1 = new Car("Toyota", 1.2, Color.BLACK, 2_300_000);
     Car car2 = new Car("Lamborghini", 5.2, Color.BLACK, 10_300_000);
@@ -75,7 +73,7 @@ class CarShopTest {
     @Test
     void getMaxPrice() {
 
-        assertEquals(MAX_PRICE, carShop.getMaxPrice());
+        assertEquals(10_000_000, carShop.getMaxPrice());
 
     }
 
