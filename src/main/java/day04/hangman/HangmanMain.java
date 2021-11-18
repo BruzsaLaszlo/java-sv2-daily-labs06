@@ -6,7 +6,7 @@ public class HangmanMain {
 
     private final String wordToFind = "alma";
 
-    private String wordFound = "____";
+    private String wordFound = wordToFind.replaceAll("\\w", "_");
 
     private int chances = 8;
 
